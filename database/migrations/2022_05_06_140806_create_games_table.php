@@ -25,6 +25,7 @@ class CreateGamesTable extends Migration
             $table->string("md5");
             $table->text("description");
             $table->string("width")->nullable();
+            $table->string("assets");
             $table->timestamps();
         });
     }

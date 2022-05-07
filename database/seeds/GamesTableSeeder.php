@@ -19,7 +19,8 @@ class GamesTableSeeder extends Seeder
         // dd($games[0]);
   
         foreach ($games as  $game) {
-        // dd($game['title']);
+            $assets = $game['assets'];
+            $assetsName = $assets[0];
 
             $newGame = new Games();
             $newGame->title = $game['title'];
@@ -32,6 +33,7 @@ class GamesTableSeeder extends Seeder
             $newGame->md5 = $game['md5'];
             $newGame->description = $game['description'];
             $newGame->width = $game['width'];
+            $newGame->assets = 'https://img.gamedistribution.com/' . $assetsName['name'];
             $newGame->save();
 
     }

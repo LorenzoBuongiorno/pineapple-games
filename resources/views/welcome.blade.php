@@ -5,12 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
-        <iframe src="https://html5.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75/" width="1120" height="516" frameborder="no" scrolling="no"></iframe>
-
+        
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        
         <!-- Styles -->
         <style>
             html, body {
@@ -85,7 +83,7 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-
+                <iframe src="https://html5.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75/" width="800" height="516" frameborder="no" scrolling="no"></iframe>
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
