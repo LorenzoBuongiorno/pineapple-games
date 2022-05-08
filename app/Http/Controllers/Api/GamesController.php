@@ -49,7 +49,8 @@ class GamesController extends Controller
      */
     public function show($id)
     {
-        //
+        $game = Games::findOrFail($id);
+        return response()->json($game);
     }
 
     /**

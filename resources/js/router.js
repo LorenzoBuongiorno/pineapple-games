@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import Home from './pages/home.vue';
+import GameShow from './pages/gameShow.vue';
 
 const router = new VueRouter({
     mode: "history",
@@ -12,7 +13,11 @@ const router = new VueRouter({
             component: Home,
             name: "homepage",
         },
-
+        {   path: "/games/:game", 
+            component: GameShow, 
+            name: "games.show",
+            meta: { title: "Game"},
+        },
 		]
 	});
 
