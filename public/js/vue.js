@@ -4015,12 +4015,13 @@ var render = function () {
   return _c(
     "div",
     {
-      staticClass: "col-xl-2 col-lg-3 col-md-4 col-sm-6 col-10 text-center p-2",
+      staticClass:
+        "text-center game-card p-2 col-xxl-3 col-xl-3 col-lg-4 col-md-10 col-10",
     },
     [
       _c(
         "div",
-        { staticClass: "position-relative game-card h-100 p-2" },
+        { staticClass: "position-relative game-card-bg h-100 p-2" },
         [
           _c("router-link", {
             staticClass: "position-absolute w-100 h-100 d-block",
@@ -4029,19 +4030,15 @@ var render = function () {
             },
           }),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "card-game overflow-hidden game-card-image" },
-            [
-              _c("img", {
-                staticClass: "img-fluid",
-                attrs: { src: _vm.game.assets, alt: _vm.game.title },
-              }),
-            ]
-          ),
+          _c("div", { staticClass: "overflow-hidden game-card-image" }, [
+            _c("img", {
+              staticClass: "w-100",
+              attrs: { src: _vm.game.assets, alt: _vm.game.title },
+            }),
+          ]),
           _vm._v(" "),
           _c("div", { staticClass: "p-2" }, [
-            _c("div", { staticClass: "game-title fw-bolder" }, [
+            _c("div", { staticClass: "game-title fw-bolder fs-5" }, [
               _vm._v(_vm._s(_vm.game.title)),
             ]),
             _vm._v(" "),
@@ -4164,7 +4161,7 @@ var render = function () {
         _c("div", { staticClass: "row d-flex" }, [
           _vm._m(0),
           _vm._v(" "),
-          _c("div", { staticClass: "container col-8" }, [
+          _c("div", { staticClass: "container col-xl-7 col-10" }, [
             _c(
               "div",
               {
@@ -4192,17 +4189,21 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "frame-border col-2" }, [
-      _c("div", { staticClass: "frame w-100 h-100" }),
-    ])
+    return _c(
+      "div",
+      { staticClass: "frame-border col-xl-2 col-lg-1 col-md-1 col-sm-0" },
+      [_c("div", { staticClass: "frame w-100 h-100" })]
+    )
   },
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "frame-border col-2" }, [
-      _c("div", { staticClass: "frame w-100 h-100" }),
-    ])
+    return _c(
+      "div",
+      { staticClass: "frame-border col-xl-2 col-lg-1 col-md-1 col-sm-0" },
+      [_c("div", { staticClass: "frame w-100 h-100" })]
+    )
   },
 ]
 render._withStripped = true
