@@ -5154,6 +5154,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -5237,6 +5239,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_TheGameCard_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/TheGameCard.vue */ "./resources/js/components/TheGameCard.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -42958,7 +42975,7 @@ var render = function () {
     [
       _c(
         "div",
-        { staticClass: "position-relative" },
+        { staticClass: "position-relative game-card h-100 p-2" },
         [
           _c("router-link", {
             staticClass: "position-absolute w-100 h-100 d-block",
@@ -42967,17 +42984,25 @@ var render = function () {
             },
           }),
           _vm._v(" "),
-          _c("div", { staticClass: "card-game overflow-hidden" }, [
-            _c("img", {
-              staticClass: "img-fluid",
-              attrs: { src: _vm.game.assets, alt: _vm.game.title },
-            }),
-          ]),
+          _c(
+            "div",
+            { staticClass: "card-game overflow-hidden game-card-image" },
+            [
+              _c("img", {
+                staticClass: "img-fluid",
+                attrs: { src: _vm.game.assets, alt: _vm.game.title },
+              }),
+            ]
+          ),
           _vm._v(" "),
           _c("div", { staticClass: "p-2" }, [
-            _c("div", {}, [_vm._v(_vm._s(_vm.game.title))]),
+            _c("div", { staticClass: "game-title fw-bolder" }, [
+              _vm._v(_vm._s(_vm.game.title)),
+            ]),
             _vm._v(" "),
-            _c("div", {}, [_vm._v(_vm._s(_vm.game.company))]),
+            _c("div", { staticClass: "game-company fs-6" }, [
+              _vm._v(_vm._s(_vm.game.company)),
+            ]),
           ]),
         ],
         1
@@ -43014,7 +43039,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("nav")])])
+    return _c("div", { staticClass: "fixed-top" }, [
+      _c("nav", [_c("h1", [_vm._v("nav")])]),
+    ])
   },
 ]
 render._withStripped = true
@@ -43087,21 +43114,52 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", [_vm._v("vue home")]),
-    _vm._v(" "),
-    _c("div", { staticClass: "container col-11" }, [
-      _c(
-        "div",
-        { staticClass: "row d-flex justify-content-center flex-wrap" },
-        _vm._l(_vm.games, function (game) {
-          return _c("the-game-card", { key: game.id, attrs: { game: game } })
-        }),
-        1
-      ),
+    _c("main", [
+      _c("div", { staticClass: "container-fluid col-12" }, [
+        _c("div", { staticClass: "row d-flex" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "container col-8" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "central-box row p-4 d-flex justify-content-center flex-wrap",
+              },
+              _vm._l(_vm.games, function (game) {
+                return _c("the-game-card", {
+                  key: game.id,
+                  attrs: { game: game },
+                })
+              }),
+              1
+            ),
+          ]),
+          _vm._v(" "),
+          _vm._m(1),
+        ]),
+      ]),
     ]),
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "frame-border col-2" }, [
+      _c("div", { staticClass: "frame w-100 h-100" }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "frame-border col-2" }, [
+      _c("div", { staticClass: "frame w-100 h-100" }),
+    ])
+  },
+]
 render._withStripped = true
 
 

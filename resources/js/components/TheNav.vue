@@ -1,6 +1,8 @@
 <template>
-  <div>
+  <div class="fixed-top">
+    <nav>
       <h1>nav</h1>
+    </nav>
   </div>
 </template>
 
