@@ -1,7 +1,44 @@
 nav{
-    height: 80px;
+    height: 120px;
     background-color: #252525;
     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.8);
     box-shadow: inset 0px 0px 20px 3px rgba(0,0,0,0.3);
+    line-height: 120px;
+    letter-spacing: 5px;
+    a{
+        text-decoration: none;
+    }
+        .logo-title{
+            margin-right: 30px;
+            font-family: 'Koulen', cursive;
+            font-size: 35px;
+            font-weight: bold;
+            color: #f4fc03;
+            text-shadow: 0px 0px 0 rgb(243,230,0),
+                     -1px 1px 0 rgb(230,217,0),
+                     -2px 2px 0 rgb(218,205,0),
+                     -3px 3px 0 rgb(205,192,0),
+                     -4px 4px  0 rgb(193,180,0),
+                     -5px 5px 4px rgba(0,0,0,0.26),
+                     -5px 5px 1px rgba(0,0,0,0.5),
+                     0px 0px 4px rgba(0,0,0,.2);
+    
+        }
+        img{
+            filter: invert(95%) sepia(94%) saturate(7492%) hue-rotate(9deg) brightness(116%) contrast(98%) drop-shadow(0px 2px 15px rgb(235, 210, 52, 1));
+            width: 100px;
+        }
+        .home-button{
+            font-size: 25px;
+            color: #ebebeb;
+            text-shadow: 0px 0px 0 rgb(223,223,223),
+                 -1px 1px 0 rgb(210,210,210),
+                 -2px 2px 0 rgb(198,198,198),
+                 -3px 3px 0 rgb(185,185,185),
+                 -4px 4px  0 rgb(173,173,173),
+                 -5px 5px 4px rgba(0,0,0,0.26),
+                 -5px 5px 1px rgba(0,0,0,0.5),
+                 0px 0px 4px rgba(0,0,0,.2);
 
+        }
 }

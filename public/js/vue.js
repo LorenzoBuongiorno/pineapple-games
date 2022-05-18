@@ -1962,6 +1962,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -4095,20 +4103,33 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "fixed-top" }, [
-    _c(
-      "nav",
-      [
-        _c(
-          "router-link",
-          {
-            staticClass: "btn btn-success",
-            attrs: { to: { name: "homepage" } },
-          },
-          [_vm._v("homepage")]
-        ),
-      ],
-      1
-    ),
+    _c("nav", [
+      _c(
+        "div",
+        {
+          staticClass:
+            "d-flex align-items-center justify-content-between ms-3 me-3",
+        },
+        [
+          _c("router-link", { attrs: { to: { name: "homepage" } } }, [
+            _c("div", { staticClass: "d-flex" }, [
+              _c("img", { attrs: { src: "img/pineapple-games.svg", alt: "" } }),
+              _vm._v(" "),
+              _c("div", { staticClass: "logo-title" }, [
+                _vm._v("Pineapple Games"),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            { staticClass: "home-button", attrs: { to: { name: "homepage" } } },
+            [_vm._v("HOME")]
+          ),
+        ],
+        1
+      ),
+    ]),
   ])
 }
 var staticRenderFns = []
