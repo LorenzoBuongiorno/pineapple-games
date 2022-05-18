@@ -5187,6 +5187,26 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -5263,8 +5283,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -5297,6 +5315,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_TheNav_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/TheNav.vue */ "./resources/js/components/TheNav.vue");
+//
+//
 //
 //
 //
@@ -42971,7 +42991,7 @@ var render = function () {
     "div",
     {
       staticClass:
-        "text-center game-card p-2 col-xxl-3 col-xl-3 col-lg-4 col-md-10 col-10",
+        "text-center p-2 col-xxl-3 col-xl-3 col-lg-4 col-md-10 col-10",
     },
     [
       _c(
@@ -43029,18 +43049,24 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "fixed-top" }, [
+    _c(
+      "nav",
+      [
+        _c(
+          "router-link",
+          {
+            staticClass: "btn btn-success",
+            attrs: { to: { name: "homepage" } },
+          },
+          [_vm._v("homepage")]
+        ),
+      ],
+      1
+    ),
+  ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "fixed-top" }, [
-      _c("nav", [_c("h1", [_vm._v("nav")])]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -43062,33 +43088,68 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("h1", [_vm._v("show")]),
-      _vm._v(" "),
-      _c(
-        "router-link",
-        { staticClass: "btn btn-success", attrs: { to: { name: "homepage" } } },
-        [_vm._v("homepage")]
-      ),
-      _vm._v(" "),
-      _c("div", [_vm._v(_vm._s(_vm.game.title))]),
-      _vm._v(" "),
-      _c("iframe", {
-        attrs: {
-          src: "https://html5.gamedistribution.com/" + _vm.game.md5 + "/",
-          width: "800",
-          height: "516",
-          frameborder: "no",
-          scrolling: "no",
-        },
-      }),
-    ],
-    1
-  )
+  return _c("div", [
+    _c("div", { staticClass: "container-fluid col-12" }, [
+      _c("div", { staticClass: "row d-flex" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "container col-xl-8 col-10" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "central-box row p-4 d-flex justify-content-center flex-column",
+            },
+            [
+              _c("h1", { staticClass: "show-title fw-bold mb-2" }, [
+                _vm._v(_vm._s(_vm.game.title)),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "centrale-frame-external p-2" }, [
+                _c("iframe", {
+                  staticClass: "centrale-frame-internal m-0 col-12",
+                  attrs: {
+                    src:
+                      "https://html5.gamedistribution.com/" +
+                      _vm.game.md5 +
+                      "/",
+                    height: "900",
+                    frameborder: "no",
+                    scrolling: "no",
+                  },
+                }),
+              ]),
+            ]
+          ),
+        ]),
+        _vm._v(" "),
+        _vm._m(1),
+      ]),
+    ]),
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "frame-border col-xl-2 col-lg-1 col-md-1 col-sm-0" },
+      [_c("div", { staticClass: "frame w-100 h-100" })]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "frame-border col-xl-2 col-lg-1 col-md-1 col-sm-0" },
+      [_c("div", { staticClass: "frame w-100 h-100" })]
+    )
+  },
+]
 render._withStripped = true
 
 
@@ -43111,30 +43172,28 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("main", [
-      _c("div", { staticClass: "container-fluid col-12" }, [
-        _c("div", { staticClass: "row d-flex" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _c("div", { staticClass: "container col-xl-7 col-10" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "central-box row p-4 d-flex justify-content-center flex-wrap",
-              },
-              _vm._l(_vm.games, function (game) {
-                return _c("the-game-card", {
-                  key: game.id,
-                  attrs: { game: game },
-                })
-              }),
-              1
-            ),
-          ]),
-          _vm._v(" "),
-          _vm._m(1),
+    _c("div", { staticClass: "container-fluid col-12" }, [
+      _c("div", { staticClass: "row d-flex" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "container col-xl-8 col-10" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "central-box row p-4 d-flex justify-content-center flex-wrap",
+            },
+            _vm._l(_vm.games, function (game) {
+              return _c("the-game-card", {
+                key: game.id,
+                attrs: { game: game },
+              })
+            }),
+            1
+          ),
         ]),
+        _vm._v(" "),
+        _vm._m(1),
       ]),
     ]),
   ])
@@ -43182,7 +43241,11 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("the-nav"), _vm._v(" "), _c("router-view")], 1)
+  return _c(
+    "div",
+    [_c("the-nav"), _vm._v(" "), _c("main", [_c("router-view")], 1)],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

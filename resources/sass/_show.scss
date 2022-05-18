@@ -1,0 +1,13 @@
+.centrale-frame-external{
+    background-color: #b6b6b6;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.8);
+    .centrale-frame-internal{
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+    }
+}
+.show-title{
+    text-shadow: 3px 5px 2px #474747;
+    font-family: 'Koulen', cursive;
+    letter-spacing: 3px;
+    color: #ccc;
+}

@@ -1,6 +1,5 @@
 <template>
     <div>
-      <main>
         <div class="container-fluid col-12">
           <div class="row d-flex">
             <div class="frame-border col-xl-2 col-lg-1 col-md-1 col-sm-0">
@@ -8,7 +7,7 @@
             </div>
 
             <!-- centrale container -->
-            <div class="container col-xl-7 col-10">
+            <div class="container col-xl-8 col-10">
               <div class="central-box row p-4 d-flex justify-content-center flex-wrap">
                 <the-game-card v-for="game in games" :key="game.id" :game="game" /> 
               </div>
@@ -20,7 +19,6 @@
 
           </div>
         </div>
-      </main>
     </div>
 </template>
 

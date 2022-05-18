@@ -1,7 +1,7 @@
 <template>
   <div class="fixed-top">
     <nav>
-      <h1>nav</h1>
+      <router-link class="btn btn-success" :to="{ name:'homepage'}">homepage</router-link>
     </nav>
   </div>
 </template>

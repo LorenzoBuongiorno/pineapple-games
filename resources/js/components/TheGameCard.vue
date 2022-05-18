@@ -1,6 +1,6 @@
 <template>
 
-    <div class="text-center game-card p-2 col-xxl-3 col-xl-3 col-lg-4 col-md-10 col-10">
+    <div class="text-center p-2 col-xxl-3 col-xl-3 col-lg-4 col-md-10 col-10">
         <div class="position-relative game-card-bg h-100 p-2">
             <router-link :to="{ name:'games.show', params: { game: game.id } }" class="position-absolute w-100 h-100 d-block"></router-link>
             <div class="overflow-hidden game-card-image">
