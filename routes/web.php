@@ -14,12 +14,13 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
+Route::get('/{any}', function () {
     return view('homeVue');
-});
+})->where("any",".*");
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource("games", "GamesController");
+

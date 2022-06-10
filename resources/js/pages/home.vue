@@ -9,6 +9,7 @@
             <!-- centrale container -->
             <div class="container col-xl-8 col-10">
               <div class="central-box row p-4 d-flex justify-content-center flex-wrap">
+              <h1 class="show-title fw-bold mb-2">Popular 50 Games</h1>
                 <the-game-card v-for="game in games" :key="game.id" :game="game" /> 
               </div>
             </div>

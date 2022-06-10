@@ -8,7 +8,10 @@
             <div class="logo-title">Pineapple Games</div>
           </div>
         </router-link>
-          <router-link class="home-button" :to="{ name:'homepage'}">HOME</router-link>
+        <div>
+            <router-link class="home-button me-3" :to="{ name:'welcome'}">HOME</router-link>
+            <router-link class="home-button me-3" :to="{ name:'games'}">GAMES</router-link>
+        </div>
         </div>
     </nav>
   </div>
